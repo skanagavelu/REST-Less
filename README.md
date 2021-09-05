@@ -29,8 +29,7 @@ REST-less will be implemented via In - Memory with background replica updates. H
 
 4. Support below both url caching
 
-Static/fixed url (No path variable) 
-Dynamic url (with path variable with RegEx support)
+   Static/fixed url (No path variable) Dynamic url (with path variable with RegEx support)
 
 
 5. Add support for specific (few / all) query parameters to differentiate cache key
@@ -45,6 +44,11 @@ Dynamic url (with path variable with RegEx support)
 
 1. Deduplication, Group the cache keys which has same response
 2. Optimise the cache to handle the limit and offset query params intelligently
-3. 
+3. Expire as part of successful modification of existing key, untill no expiry
+
+
+# Corner cases:
+
+1. if one of the header is added for the url then neeed to expired old entries 
 
 
