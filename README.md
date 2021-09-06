@@ -50,5 +50,7 @@ REST-less will be implemented via In - Memory with background replica updates. H
 # Corner cases:
 
 1. if one of the header is added for the url then neeed to expired old entries 
+2. Cache should consider failure response, and successful reesponse differently
+
 
 
